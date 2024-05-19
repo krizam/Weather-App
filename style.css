@@ -217,3 +217,11 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added box shadow */
     transition: transform 0.3s, box-shadow 0.3s; /* Added transition */
 }
+.cityWeatherContainer1 {
+    width: 75vw;
+    overflow-x: scroll;
+    margin: auto;
+    border-right: 3px solid aqua;
+    border-left: 3px solid aqua;
+    scroll-behavior: smooth; /* Added smooth scrolling */
+}
