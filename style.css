@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root {
+    --primBlue: #00ABF0;
+    --primWhite: #efefef;
+    --primBlack: #000;
+    --primBgBlue: #0b17a72b;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: var(--primBlack);
+    color: var(--primWhite);
+    font-family: 'Inter', sans-serif;
+}
+
+.inputContainer{
+    height: 10vh;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    opacity:0.7;
+}
+.inputContainer #mySearch {
+    padding: 10px;
+    background-color:var(--primBgBlue);
+    border: none;
+    /* border: 1px solid var(--primBlue); */
+    border-radius:5px;
+    margin:5px;
+    color: var(--primWhite);
+    font-weight: 200;
+    font-size:16px;
+    width: 150px;
+    transition: 0.5s ease-in-out;
+    text-align:center;
+}
+.inputContainer button{
+    background-color:transparent;
+    border:none;
+}
+.inputContainer ion-icon{
+    width: 30px;
+    height: 30px;
+    font-size:22px;
+    /* height: 35px; */
+    margin: auto;
+    padding: 5px;
+    border-radius:5px;
+    color: var(--primWhite);
+    cursor: pointer;
+    background-color:var(--primBgBlue);
+}
+.inputContainer button:active, .inputContainer:hover, .inputContainer #mySearch:focus {
+    opacity: 1;
+}
+#mySearch:focus{
+    width:60vw;
+    outline: none;
+    border: 1px solid var(--primBlue);
+}
+.inputContainer ion-icon:hover{
+    background-color:var(--primBlue);
+    color:var(--primBlack);
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center .details {
+    background-color: var(--primBgBlue);
+    padding: 10px;
+    margin: 10px;
+    border: var(--primBlue) solid 2px;
+    border-radius: 20px;
+}
+.flex-name {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+#temperature {
+     font-size:18px;
+    font-weight: 800;
+    margin-left:15px;
+}
+#description {
+    font-size: 12px;
+    font-weight:400;
+    text-transform:uppercase;
+}
+.details #name {
+    display: flex;
+    justify-content:center;
+    font-weight: 800;
+    font-size: xxx-large;
+}
+.image img{
+    padding-top: 15px;
+    width: 300px;
+    display: flex;
+    margin:auto;
+}
+.flex-details, .flex {
+    display: flex;
+    justify-content:space-around;
+    padding-bottom: 15px;
+}
+.flex-details {
+    font-weight: 500;
+    text-align: center;
+    padding:5px;
+}
+.ez {
+    height: 2px;
+    margin:auto;
+    margin: 5px;
+    border-radius: 10px;
+}
+.flex {
+    margin-top: 5px;
+    font-weight:200;
+    font-size: 15px;
+}
+.error {
+    display:flex;
+    justify-content: center;
+    padding: 5px;
+}
+.top {
+    display:flex;
+    justify-content:center;
+    padding:20px;
+    color: var(--primBlue);
+}
+.cityWeatherContainer1 {
+    width: 75vw;
+    overflow-x:scroll;
+    margin:auto;    
+    border-right: 3px solid aqua;
+    border-left: 3px solid aqua;
+}
+.cityWeatherContainer1::-webkit-scrollbar {
+  height: 0;
+}
+.cityWeatherContainer2 {
+    margin: 5px;
+    display: flex;
+}
+.cityWeather2 {
+    background-color: var(--primBgBlue);
+    margin-right: 16px;
+    min-width: 200px;
+    padding: 20px 8px;
+    border-radius: 8px;
+    border: 1px solid aqua;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    user-select: none;
+}
+.cityWeather2 img {
+    width: 50px
+}
+.cityWeather2 .city2 {
+    font-size: 20px;
+    font-weight:500;
+}
+.cityWeather2 .dayOfWeek2 {
+    font-size: 12px;
+    font-weight:200;
+    margin-top:3px;
+}
+.cityWeather2 .temperature2 {
+    font-size: 18px;
+    font-weight:500;
+}
+.cityWeather2 .date2 {
+    font-size: 12px;
+    font-weight:200;
+    margin-top:8px;
+}
+.cityWeatherContainer1 {
+    cursor: grab;
+}
+.loaderflex {
+    display: flex;
+    justify-content: center;
+}
