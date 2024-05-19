@@ -225,3 +225,7 @@ body {
     border-left: 3px solid aqua;
     scroll-behavior: smooth; /* Added smooth scrolling */
 }
+.cityWeather2:hover {
+    transform: translateY(-5px); /* Added lift effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+}
